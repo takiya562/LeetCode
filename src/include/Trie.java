@@ -56,4 +56,19 @@ public class Trie {
         }
         return cur.val != null && word.equals(cur.val);
     }
+
+    public String partSearch(String word) {
+        TreeNode cur = root;
+        String res = null;
+        for (int index = 0; index < word.length(); index++) {
+            int c = word.charAt(index) - 'a';
+            cur = cur.children[c];
+            if (cur == null)
+                break;
+            res = cur.val;
+            if (res != null)
+                break;
+        }
+        return res;
+    }
 }
