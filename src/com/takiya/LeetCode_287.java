@@ -1,0 +1,19 @@
+package com.takiya;
+
+public class LeetCode_287 {
+    public int findDuplicate(int[] nums) {
+        int tortoise = nums[0];
+        int hare = nums[0];
+        do {
+            tortoise = nums[tortoise];
+            hare = nums[nums[hare]];
+        } while (tortoise != hare);
+        int p1 = nums[0];
+        int p2 = tortoise;
+        while (p1 != p2) {
+            p1 = nums[p1];
+            p2 = nums[p2];
+        }
+        return p1;
+    }
+}
