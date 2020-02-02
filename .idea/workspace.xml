@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b535f1d9-89b6-4304-9593-cd5161dd254b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_42.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/takiya/LeetCode_42.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_373$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_373.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_373.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,9 +48,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeetCode_373">
-    <configuration name="LeetCode_1254" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_1254" />
+  <component name="RunManager" selected="Application.LeetCode_1042">
+    <configuration name="LeetCode_1042" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_1042" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -61,8 +62,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode_319" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_319" />
+    <configuration name="LeetCode_1254" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_1254" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -115,18 +116,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Test" />
-      <item itemvalue="Application.LeetCode_319" />
       <item itemvalue="Application.LeetCode_1254" />
       <item itemvalue="Application.LeetCode_886" />
       <item itemvalue="Application.LeetCode_373" />
+      <item itemvalue="Application.LeetCode_1042" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LeetCode_1042" />
         <item itemvalue="Application.LeetCode_373" />
         <item itemvalue="Application.LeetCode_886" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.LeetCode_1254" />
-        <item itemvalue="Application.LeetCode_319" />
       </list>
     </recent_temporary>
   </component>
@@ -214,6 +215,8 @@
       <workItem from="1580288328672" duration="775000" />
       <workItem from="1580359559175" duration="4168000" />
       <workItem from="1580448213079" duration="6191000" />
+      <workItem from="1580530961870" duration="16973000" />
+      <workItem from="1580618952722" duration="5085000" />
     </task>
     <servers />
   </component>
