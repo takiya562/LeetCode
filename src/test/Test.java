@@ -7,8 +7,13 @@ import java.util.Stack;
 
 public class Test {
     public static void main(String args[]) {
-        int num = 4;
-        num <<= 1;
-        System.out.print(num);
+        char s = ' ';
+        int a = s;
+        System.out.println(a);
+    }
+    public static int getPara(String s, int index) {
+        int temp = index;
+        while (s.charAt(index) >= 48 && s.charAt(index) <= 57) ++index;
+        return Integer.valueOf(s.substring(temp, index));
     }
 }
