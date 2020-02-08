@@ -7,13 +7,11 @@ import java.util.Stack;
 
 public class Test {
     public static void main(String args[]) {
-        char s = ' ';
-        int a = s;
-        System.out.println(a);
-    }
-    public static int getPara(String s, int index) {
-        int temp = index;
-        while (s.charAt(index) >= 48 && s.charAt(index) <= 57) ++index;
-        return Integer.valueOf(s.substring(temp, index));
+        int s1 = 'a';
+        int s2 = 'z';
+        int s3 = 'A';
+        int s4 = 'Z';
+        System.out.println(s1 + "to" + s2);
+        System.out.print(s3 + "to" + s4);
     }
 }
