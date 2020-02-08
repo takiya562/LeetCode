@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b535f1d9-89b6-4304-9593-cd5161dd254b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_227.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_227.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/include/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/include/TreeNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/algorithm/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/test/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/takiya/LeetCode_5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,8 +75,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode_508" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_508" />
+    <configuration name="LeetCode_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_4" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -93,8 +88,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode_914" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_914" />
+    <configuration name="LeetCode_508" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_508" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -120,19 +115,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LeetCode_914" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.LeetCode_224" />
       <item itemvalue="Application.LeetCode_227" />
       <item itemvalue="Application.LeetCode_508" />
+      <item itemvalue="Application.LeetCode_4" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.LeetCode_4" />
         <item itemvalue="Application.LeetCode_508" />
         <item itemvalue="Application.LeetCode_227" />
         <item itemvalue="Application.LeetCode_224" />
-        <item itemvalue="Application.LeetCode_914" />
       </list>
     </recent_temporary>
   </component>
@@ -227,6 +222,7 @@
       <workItem from="1580877816362" duration="8237000" />
       <workItem from="1580965236012" duration="10101000" />
       <workItem from="1581051891970" duration="8266000" />
+      <workItem from="1581137951984" duration="8432000" />
     </task>
     <servers />
   </component>
@@ -348,6 +344,11 @@
           <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_227.java</url>
           <line>10</line>
           <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/Test.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="91" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
