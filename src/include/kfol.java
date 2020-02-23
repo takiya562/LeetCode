@@ -17,6 +17,6 @@ public class kfol {
         System.out.println(VIT);
     }
     public static void main(String args[]) {
-        cal(130, 1);
+        cal(156, 1);
     }
 }

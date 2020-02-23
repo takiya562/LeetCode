@@ -9,6 +9,9 @@ import java.util.Stack;
 
 public class Test {
     public static void main(String args[]) {
-        System.out.println(1 << 1);
+        String str = "2019-06-29";
+        String[] split = str.split("-");
+        for (int i = 0; i < split.length; ++i)
+            System.out.println(Integer.valueOf(split[i]));
     }
 }
