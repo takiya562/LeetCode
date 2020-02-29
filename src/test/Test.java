@@ -2,16 +2,15 @@ package test;
 
 import include.*;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Stack;
+import java.util.*;
 
 
 public class Test {
     public static void main(String args[]) {
-        String str = "2019-06-29";
-        String[] split = str.split("-");
-        for (int i = 0; i < split.length; ++i)
-            System.out.println(Integer.valueOf(split[i]));
+        String str = "😋ABC";
+        int[] codePoints = str.codePoints().toArray();
+        System.out.println(str.substring(1,2));
+        for (int i = 0 ; i < codePoints.length; ++i)
+            System.out.print(codePoints[i] + " ");
     }
 }

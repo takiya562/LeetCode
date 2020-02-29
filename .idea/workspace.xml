@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b535f1d9-89b6-4304-9593-cd5161dd254b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/Week/No177/LeetCode_5169.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/Week/No177/LeetCode_5169.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/include/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/include/Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/include/kfol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/include/kfol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/test/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/include/kfol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/kfol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
     </list>
@@ -37,7 +40,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -51,9 +54,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="LeetCode_300" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_300" />
+  <component name="RunManager" selected="Application.LeetCode_452">
+    <configuration name="LeetCode_403" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_403" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -65,8 +68,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode_334" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_334" />
+    <configuration name="LeetCode_452" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_452" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -78,8 +81,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode_368" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_368" />
+    <configuration name="LeetCode_76" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_76" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -120,17 +123,17 @@
     <list>
       <item itemvalue="Application.kfol" />
       <item itemvalue="Application.Test" />
-      <item itemvalue="Application.LeetCode_300" />
-      <item itemvalue="Application.LeetCode_334" />
-      <item itemvalue="Application.LeetCode_368" />
+      <item itemvalue="Application.LeetCode_403" />
+      <item itemvalue="Application.LeetCode_76" />
+      <item itemvalue="Application.LeetCode_452" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LeetCode_452" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Application.LeetCode_76" />
         <item itemvalue="Application.kfol" />
-        <item itemvalue="Application.LeetCode_368" />
-        <item itemvalue="Application.LeetCode_334" />
-        <item itemvalue="Application.LeetCode_300" />
+        <item itemvalue="Application.LeetCode_403" />
       </list>
     </recent_temporary>
   </component>
@@ -239,6 +242,12 @@
       <workItem from="1582257282513" duration="19571000" />
       <workItem from="1582348401479" duration="10730000" />
       <workItem from="1582433127979" duration="10234000" />
+      <workItem from="1582520607576" duration="10947000" />
+      <workItem from="1582604597260" duration="14906000" />
+      <workItem from="1582699858977" duration="12938000" />
+      <workItem from="1582783870540" duration="6721000" />
+      <workItem from="1582865084468" duration="11142000" />
+      <workItem from="1582960827481" duration="10041000" />
     </task>
     <servers />
   </component>
@@ -370,6 +379,11 @@
           <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_334.java</url>
           <line>25</line>
           <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_403.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="92" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
