@@ -2,10 +2,200 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b535f1d9-89b6-4304-9593-cd5161dd254b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_452.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_452.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/test/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCOde_391.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1004.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1006.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1010.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1029.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1039.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1042.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1071.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1095.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1138.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1161.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_118.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1184.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_12.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_121.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1219.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_122.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1220.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1254.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_127.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_128.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_129.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_13.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_130.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_1304.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_134.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_136.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_137.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_14.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_141.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_142.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_149.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_15.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_150.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_16.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_162.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_164.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_167.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_17.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_173.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_174.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_18.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_19.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_20.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_200.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_203.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_205.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_21.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_216.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_219.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_22.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_222.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_224.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_225.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_227.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_229.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_235.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_236.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_237.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_239.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_24.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_240.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_258.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_26.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_260.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_263.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_264.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_27.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_28.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_287.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_29.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_300.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_309.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_31.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_310.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_315.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_319.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_32.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_329.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_33.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_330.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_331.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_332.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_334.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_338.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_34.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_343.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_35.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_354.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_36.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_365.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_368.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_373.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_375.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_376.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_377.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_38.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_39.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_390.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_396.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_397.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_399.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_400.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_402.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_403.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_406.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_407.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_413.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_42.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_421.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_424.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_429.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_435.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_436.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_438.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_442.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_446.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_452.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_46.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_463.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_472.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_485.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_495.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_496.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_503.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_508.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_51.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_526.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_53.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_532.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_54.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_540.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_559.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_575.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_598.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_62.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_623.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_63.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_646.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_648.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_649.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_673.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_674.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_678.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_693.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_709.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_713.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_714.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_738.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_748.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_749.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_76.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_767.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_77.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_78.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_789.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_806.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_808.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_822.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_845.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_858.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_863.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_865.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_874.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_881.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_886.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_889.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_890.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_90.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_914.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_919.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_924.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_925.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_928.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_937.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_94.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_941.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_948.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_961.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_962.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_970.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/LeetCode_978.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/NestedIterator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/takiya/StockSpanner.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -252,7 +442,7 @@
       <workItem from="1583158020260" duration="624000" />
       <workItem from="1583211793470" duration="4657000" />
       <workItem from="1583234116123" duration="2792000" />
-      <workItem from="1583298007215" duration="788000" />
+      <workItem from="1583298007215" duration="1053000" />
     </task>
     <servers />
   </component>
@@ -271,126 +461,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_3.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_6.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_9.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_11.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_15.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_18.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_28.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_33.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_34.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_38.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_53.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_62.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_63.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_149.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_858.java</url>
-          <line>4</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_970.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_1220.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_623.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_914.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_227.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_1006.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_334.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/takiya/LeetCode_403.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
