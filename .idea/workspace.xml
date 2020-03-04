@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b535f1d9-89b6-4304-9593-cd5161dd254b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/Week/No177/LeetCode_5169.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/Week/No177/LeetCode_5169.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/include/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/include/Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/include/kfol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/include/kfol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_452.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_452.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/algorithm/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/test/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/kfol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/kfol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,6 +33,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Core Java" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -54,13 +52,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeetCode_452">
-    <configuration name="LeetCode_403" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_403" />
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="LeetCode_5344" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Week.No178.LeetCode_5344" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.takiya.*" />
+          <option name="PATTERN" value="Week.No178.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +66,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode_452" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_452" />
+    <configuration name="LeetCode_5345" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Week.No178.LeetCode_5345" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.takiya.*" />
+          <option name="PATTERN" value="Week.No178.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,8 +79,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode_76" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_76" />
+    <configuration name="LeetCode_5347" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Week.No178.LeetCode_5347" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Week.No178.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode_928" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_928" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -107,33 +118,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="kfol" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="include.kfol" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="include.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.kfol" />
       <item itemvalue="Application.Test" />
-      <item itemvalue="Application.LeetCode_403" />
-      <item itemvalue="Application.LeetCode_76" />
-      <item itemvalue="Application.LeetCode_452" />
+      <item itemvalue="Application.LeetCode_5344" />
+      <item itemvalue="Application.LeetCode_5345" />
+      <item itemvalue="Application.LeetCode_5347" />
+      <item itemvalue="Application.LeetCode_928" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LeetCode_452" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.LeetCode_76" />
-        <item itemvalue="Application.kfol" />
-        <item itemvalue="Application.LeetCode_403" />
+        <item itemvalue="Application.LeetCode_928" />
+        <item itemvalue="Application.LeetCode_5347" />
+        <item itemvalue="Application.LeetCode_5345" />
+        <item itemvalue="Application.LeetCode_5344" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +245,14 @@
       <workItem from="1582699858977" duration="12938000" />
       <workItem from="1582783870540" duration="6721000" />
       <workItem from="1582865084468" duration="11142000" />
-      <workItem from="1582960827481" duration="10041000" />
+      <workItem from="1582960827481" duration="10135000" />
+      <workItem from="1583029009856" duration="18790000" />
+      <workItem from="1583063245562" duration="660000" />
+      <workItem from="1583126800400" duration="8829000" />
+      <workItem from="1583158020260" duration="624000" />
+      <workItem from="1583211793470" duration="4657000" />
+      <workItem from="1583234116123" duration="2792000" />
+      <workItem from="1583298007215" duration="788000" />
     </task>
     <servers />
   </component>
