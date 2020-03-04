@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_1010 {
     public int numPairsDivisibleBy60(int[] time) {

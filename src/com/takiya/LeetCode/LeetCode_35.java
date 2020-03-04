@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_35 {
     public int searchInsert(int[] nums, int target) {

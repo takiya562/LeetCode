@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_941 {
     public boolean validMountainArray(int[] A) {

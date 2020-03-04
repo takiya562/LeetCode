@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_1006 {
     public static int clumsy(int N) {

@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_137 {
     public int singleNumber(int[] nums) {

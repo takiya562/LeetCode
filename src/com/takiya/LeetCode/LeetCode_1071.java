@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_1071 {
     public String gcdOfStrings(String str1, String str2) {

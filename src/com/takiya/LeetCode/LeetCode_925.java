@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_925 {
     public static boolean isLongPressedName(String name, String typed) {

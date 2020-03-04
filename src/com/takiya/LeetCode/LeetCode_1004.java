@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_1004 {
     public static int longestOnes(int[] A, int K) {

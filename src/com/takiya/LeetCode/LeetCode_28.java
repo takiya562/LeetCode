@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_28 {
     public static int strStr(String haystack, String needle) {

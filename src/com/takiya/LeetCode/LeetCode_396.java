@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_396 {
     public int maxRotateFunction(int[] A) {

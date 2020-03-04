@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_1219 {
     public int getMaximumGold(int[][] grid) {

@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 import com.sun.source.tree.WhileLoopTree;
 

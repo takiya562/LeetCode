@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_134 {
     public  int canCompleteCircuit(int[] gas, int[] cost) {

@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_693 {
     public static boolean hasAlternatingBits_1(int n) {

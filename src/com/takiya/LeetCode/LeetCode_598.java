@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_598 {
     public int maxCount(int m, int n, int[][] ops) {

@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_334 {
     public static boolean increasingTriplet(int[] nums) {

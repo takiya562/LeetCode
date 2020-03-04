@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_53 {
     public static int maxSubArray(int[] nums) {

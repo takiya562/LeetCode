@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_14 {
     public static String longestCommonPrefix(String[] strs) {

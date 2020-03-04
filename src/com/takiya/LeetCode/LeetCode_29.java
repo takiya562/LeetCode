@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_29 {
     public static int divide(int dividend, int divisor) {

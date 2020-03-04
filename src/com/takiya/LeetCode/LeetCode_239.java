@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

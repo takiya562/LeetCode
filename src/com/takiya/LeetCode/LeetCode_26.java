@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_26 {
     public static int removeDuplicates(int[] nums) {

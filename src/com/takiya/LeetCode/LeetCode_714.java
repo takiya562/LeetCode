@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_714 {
     public int maxProfit(int[] prices, int fee) {

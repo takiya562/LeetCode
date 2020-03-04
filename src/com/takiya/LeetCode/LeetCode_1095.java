@@ -1,6 +1,5 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
-import javax.xml.stream.events.StartDocument;
 
 public class LeetCode_1095 {
     class MountainArray {

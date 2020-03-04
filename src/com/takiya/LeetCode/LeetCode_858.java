@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_858 {
     public static int mirrorReflection(int p, int q) {

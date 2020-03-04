@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_749 {
     /* 感染面积并不等于需要的防火墙的数量（例子：当一个未感染区域被4个感染区域围绕的时候） */

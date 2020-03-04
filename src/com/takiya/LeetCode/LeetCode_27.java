@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_27 {
     public int removeElement(int[] nums, int val) {

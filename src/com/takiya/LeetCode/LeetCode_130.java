@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 import include.UnionFind;
 
 public class LeetCode_130 {

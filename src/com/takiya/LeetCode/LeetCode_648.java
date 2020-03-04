@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 import java.util.List;
 import include.Trie;

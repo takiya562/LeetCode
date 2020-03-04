@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 import javax.print.DocFlavor;
 import java.beans.beancontext.BeanContextServiceRevokedEvent;

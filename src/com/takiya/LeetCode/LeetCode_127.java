@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 import java.util.*;
 
 public class LeetCode_127 {

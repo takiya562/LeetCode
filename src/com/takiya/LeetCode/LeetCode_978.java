@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_978 {
     public int maxTurbulenceSize(int[] A) {

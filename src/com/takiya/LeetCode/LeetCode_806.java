@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_806 {
     public int[] numberOfLines(int[] widths, String S) {

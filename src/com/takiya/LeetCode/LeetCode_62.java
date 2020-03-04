@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_62 {
     public static int uniquePaths(int m, int n) {

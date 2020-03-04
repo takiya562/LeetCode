@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 import java.util.HashSet;
 import java.util.Objects;

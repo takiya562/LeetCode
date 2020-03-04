@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_713 {
     public int numSubarrayProductLessThanK(int[] nums, int k) {

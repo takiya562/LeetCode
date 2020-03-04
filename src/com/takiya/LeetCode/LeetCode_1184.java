@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_1184 {
     public int distanceBetweenBusStops(int[] distance, int start, int destination) {

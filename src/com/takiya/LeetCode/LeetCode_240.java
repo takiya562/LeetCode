@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_240 {
     public boolean searchMatrix(int[][] matrix, int target) {

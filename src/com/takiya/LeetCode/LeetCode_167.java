@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_167 {
     public int[] twoSum(int[] numbers, int target) {

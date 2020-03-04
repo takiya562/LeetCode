@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_330 {
     public int minPatches(int[] nums, int n) {

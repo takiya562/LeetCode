@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_495 {
     public int findPoisonedDuration(int[] timeSeries, int duration) {

@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_6 {
     public static String convert_backup(String s, int numRows) {

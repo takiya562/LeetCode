@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_377 {
     public int combinationSum4(int[] nums, int target) {

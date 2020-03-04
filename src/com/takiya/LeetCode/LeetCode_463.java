@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_463 {
     public int islandPerimeter(int[][] grid) {

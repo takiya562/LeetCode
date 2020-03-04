@@ -1,4 +1,4 @@
-package com.takiya;
+package com.takiya.LeetCode;
 
 public class LeetCode_376 {
     public int wiggleMaxLength(int[] nums) {
