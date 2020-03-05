@@ -17,7 +17,7 @@ public class bisect {
 
     private static int bisect_left0(int[] a, int fromIndex, int toIndex, int key) {
         int low = fromIndex;
-        int high = toIndex - 1;
+        int high = toIndex;
 
         while (low < high) {
             int mid = (low + high) >>> 1;
@@ -33,7 +33,7 @@ public class bisect {
 
     private static int bisect_right0(int[] a, int fromIndex, int toIndex, int key) {
         int low = fromIndex;
-        int high = toIndex - 1;
+        int high = toIndex;
 
         while (low < high) {
             int mid = (low + high) >>> 1;
@@ -54,5 +54,13 @@ public class bisect {
             b[i] = b[i - 1];
         b[index] = key;
         return b;
+    }
+    public static void main(String args[]) {
+        int[] nums = {1,2,3,4,4,4,5};
+        int left = bisect_left(nums, 4);
+        int right = bisect_right(nums, 4);
+        System.out.println(right);
+        System.out.println(left);
+        System.out.println(right - left);
     }
 }
