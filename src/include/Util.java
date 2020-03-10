@@ -32,4 +32,28 @@ public class Util {
         res += day;
         return res;
     }
+
+    /**
+     * calculate a^b
+     * @param a
+     * @param b
+     * @param c
+     * @return a^b % c
+     */
+    public static int QuickPow(int a, int b, int c) {
+        long A = 1;
+        long T = a % c;
+        while (b != 0) {
+            if ((b & 1) == 1)
+                A = (A * T) % c;
+            T = (T * T) % c;
+            b >>= 1;
+        }
+        return (int)A;
+    }
+
+    public static void main(String args[]) {
+        int ans = QuickPow(3, 42, (int)(1e9 + 7));
+        System.out.println(ans);
+    }
 }

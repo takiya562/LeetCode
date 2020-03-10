@@ -3,226 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b535f1d9-89b6-4304-9593-cd5161dd254b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCOde_391$Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCOde_391.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1004.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1006.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1010.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1029.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1039.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1042.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1071.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1095$MountainArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1095.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1138.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1161.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_118.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1184.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_121.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1219.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_122.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1220.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1254.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_127$Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_127.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_128.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_129$TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_129.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_130.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_1304.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_134.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_136.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_137.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_141.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_142.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_149.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_15.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_150.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_16.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_162.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_164.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_167.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_17.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_173$BSTIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_173.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_174.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_18.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_19$ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_19.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_2$ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_20.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_200$UnionSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_200.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_203.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_205.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_21$ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_21.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_216.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_219.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_22.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_222.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_224.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_225$MyStack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_225.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_227.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_229.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_235.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_236.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_237.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_239.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_24.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_240.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_258.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_26.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_260.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_263.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_264.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_27.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_28.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_287.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_29.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_300.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_309.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_31.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_310.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_315.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_319.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_32.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_329$Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_329.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_33.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_330.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_331$Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_331.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_332.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_334.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_338.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_34.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_343.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_35.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_354$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_354.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_36.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_365$Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_365.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_368.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_373.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_375.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_376.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_377.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_38.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_39.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_390.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_396.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_397.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_400.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_402.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_403.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_406.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_407$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_407.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_413.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_42.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_421.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_424.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_429.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_435.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_436.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_438.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_442.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_446.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_452.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_46.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_463.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_472.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_485.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_495.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_496.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_503.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_508.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_51.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_526.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_53.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_532.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_54.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_540.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_559$Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_559.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_575.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_598.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_62.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_623.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_63.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_646$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_646.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_648.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_649.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_673.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_674.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_678.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_693.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_709.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_713.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_714.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_738.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_748.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_749$Wall.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_749.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_76.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_767.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_77.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_78.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_789.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_806.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_808.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_822.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_845.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_858.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_863.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_865$Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_865.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_874.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_881.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_886.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_889$TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_889.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_890.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_90.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_914.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_919$CBTInserter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_919.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_924$UnionSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_924.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_925.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_928$UnionSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_928.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_937.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_94.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_941.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_948.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_961.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_962.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_970.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/LeetCode_978.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/NestedIterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/StockSpanner$Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/StockSpanner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/algorithm/include/bisect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/include/bisect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/com/takiya/Offer/Offer_51.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/com/takiya/Offer/Offer_51.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithm/include/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/include/Util.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/algorithm/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithm/test/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/include/bisect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/bisect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/include/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/include/kfol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/include/kfol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -258,6 +43,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zyb19\IdeaProjects\algorithm\src\com\takiya\Image" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -270,13 +60,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Offer_51">
-    <configuration name="LeetCode_928" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.takiya.LeetCode_928" />
+  <component name="RunManager" selected="Application.kfol">
+    <configuration name="LeetCode_5355" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Week.No179.LeetCode_5355" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.takiya.*" />
+          <option name="PATTERN" value="Week.No179.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -284,25 +74,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Offer_45" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.takiya.Offer.Offer_45" />
+    <configuration name="Sort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="include.Sort" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.takiya.Offer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Offer_51" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.takiya.Offer.Offer_51" />
-      <module name="algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.takiya.Offer.*" />
+          <option name="PATTERN" value="include.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -323,8 +100,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bisect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="include.bisect" />
+    <configuration name="Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="include.Util" />
+      <module name="algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="include.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kfol" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="include.kfol" />
       <module name="algorithm" />
       <extension name="coverage">
         <pattern>
@@ -338,18 +128,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Test" />
-      <item itemvalue="Application.LeetCode_928" />
-      <item itemvalue="Application.Offer_45" />
-      <item itemvalue="Application.bisect" />
-      <item itemvalue="Application.Offer_51" />
+      <item itemvalue="Application.Sort" />
+      <item itemvalue="Application.LeetCode_5355" />
+      <item itemvalue="Application.Util" />
+      <item itemvalue="Application.kfol" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Offer_51" />
-        <item itemvalue="Application.bisect" />
+        <item itemvalue="Application.kfol" />
+        <item itemvalue="Application.Util" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Offer_45" />
-        <item itemvalue="Application.LeetCode_928" />
+        <item itemvalue="Application.LeetCode_5355" />
+        <item itemvalue="Application.Sort" />
       </list>
     </recent_temporary>
   </component>
@@ -473,6 +263,11 @@
       <workItem from="1583298007215" duration="6075000" />
       <workItem from="1583316946358" duration="21000" />
       <workItem from="1583384007180" duration="8928000" />
+      <workItem from="1583467925103" duration="13369000" />
+      <workItem from="1583560440988" duration="3703000" />
+      <workItem from="1583643806460" duration="2233000" />
+      <workItem from="1583739816009" duration="4427000" />
+      <workItem from="1583816141800" duration="1881000" />
     </task>
     <servers />
   </component>
@@ -491,5 +286,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Week/No179/LeetCode_5355.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
