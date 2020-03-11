@@ -1,7 +1,7 @@
 package com.takiya.Offer;
 
 public class Offer_46 {
-    public int translateNum(int num) {
+    public int translateNum_1(int num) {
         String nums = String.valueOf(num);
         int len = nums.length();
         if (len == 0)   return 0;
@@ -16,5 +16,11 @@ public class Offer_46 {
                 dp[i + 1] = dp[i];
         }
         return dp[len];
+    }
+    public int translateNum(int num) {
+        if (num <= 9)   return 1;
+        int lastTwo = num % 100;
+        if (lastTwo <= 9 || lastTwo >= 26)  return translateNum(num / 10);
+        else    return translateNum(num / 10) + translateNum(num / 100);
     }
 }
