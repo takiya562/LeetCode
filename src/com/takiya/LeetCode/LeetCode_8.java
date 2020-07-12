@@ -3,74 +3,40 @@ package com.takiya.LeetCode;
 import java.util.Stack;
 
 public class LeetCode_8 {
-    public static int myAtoi(String str) {
-        int result = 0;
-        int i = 0;
-        int ascii;
-        int n = -1;
-        boolean is_minus = false;
-        boolean head_zero = true;
-        Stack<Integer> stack = new Stack<>();
-        int plus_edge = Integer.MAX_VALUE;
-        plus_edge -= 2 * Math.pow(10, 9);
-        int minus_edge = Integer.MIN_VALUE;
-        minus_edge += 2 * Math.pow(10, 9);
-        minus_edge = Math.abs(minus_edge);
-        while(i < str.length()) {
-            ascii = str.charAt(i);
-            if (ascii == 32) {
-                i++;
+    private static int edge = Integer.MIN_VALUE / 10;
+    public int myAtoi(String str) {
+        int res = 0;
+        str = str.trim();
+        if (str.equals(""))
+            return 0;
+        char first = str.charAt(0);
+        boolean isNegative = str.charAt(0) == '-' ? true : false;
+        int digital;
+        boolean isFirst = true;
+        for (int c : str.toCharArray()) {
+            if (isFirst && (c == '-' || c == '+')) {
+                isFirst = false;
                 continue;
             }
-            if (ascii == 45) {
-                is_minus = true;
-                i++;
+            if (isFirst)
+                isFirst = false;
+            if (c < 48 || c > 57)
                 break;
+            else {
+                digital = c - '0';
+                if (res < edge || (res == edge && digital > 8)) {
+                    res = Integer.MIN_VALUE;
+                    break;
+                }
+                res = res * 10 - digital;
             }
-            if (ascii == 43) {
-                is_minus = false;
-                i++;
-                break;
-            }
-            if (ascii < 48 || ascii > 57)
-                return 0;
-            break;
         }
-        while (i < str.length()) {
-            ascii = str.charAt(i);
-            if (ascii == 48 && head_zero) {
-                i++;
-                continue;
-            }
-            head_zero = false;
-            if (!head_zero && ascii >= 48 && ascii <=57) {
-                stack.push(ascii - 48);
-                i++;
-                continue;
-            }
-            break;
-        }
-        while (!stack.empty()) {
-            if (stack.size() > 10) {
-                if (is_minus)
-                    return Integer.MIN_VALUE;
+        if (!isNegative) {
+            if (res == Integer.MIN_VALUE)
                 return Integer.MAX_VALUE;
-            }
-            n++;
-            if (n == 9 && stack.peek() >= 2 && plus_edge < result && !is_minus) {
-                return Integer.MAX_VALUE;
-            }
-            if (n == 9 && stack.peek() >= 2 && minus_edge <= result && is_minus) {
-                return Integer.MIN_VALUE;
-            }
-            result += Math.pow(10, n) * stack.pop();
+            else
+                return -res;
         }
-        result = is_minus ? -result : result;
-        return result;
-    }
-
-    public static void main(String args[]) {
-        int result = myAtoi(" 1175109307q7");
-        System.out.print(String.valueOf(result));
+        return res;
     }
 }
