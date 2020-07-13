@@ -1,3 +1,6 @@
 *.class
 lib
 out
+test
+.idea
+algorithm.iml
