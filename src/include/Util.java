@@ -1,5 +1,8 @@
 package include;
 
+
+import java.util.concurrent.ThreadLocalRandom;
+
 public class Util {
     public long gcd(long a, long b) {
         return (a == 0 ? b : gcd(b % a, a));
@@ -52,8 +55,36 @@ public class Util {
         return (int)A;
     }
 
+    public static int numberOfOne(int n){
+        int count = 0;
+        while (n != 0) {
+            count++;
+            n = n & (n - 1);
+        }
+        return count;
+    }
+
+    public static void quickSort(int[] arr) {
+        quickSort0(arr, 0, arr.length);
+    }
+
+    private static void quickSort0(int[] arr, int start, int end) {
+        if (start == end)   return;
+        int t = arr[start];
+        int l = start;
+        int r = end - 1;
+        while (l < r) {
+            while (l < r && arr[r] > t)  r--;
+            arr[l] = arr[r];
+            while (l < r && arr[l] <= t) l++;
+            arr[r] = arr[l];
+        }
+        arr[l] = t;
+        quickSort0(arr, start, l);
+        quickSort0(arr, l + 1, end);
+    }
+
     public static void main(String args[]) {
-        int ans = QuickPow(3, 42, (int)(1e9 + 7));
-        System.out.println(ans);
+
     }
 }

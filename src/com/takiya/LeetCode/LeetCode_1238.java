@@ -5,7 +5,7 @@ import java.util.List;
 
 public class LeetCode_1238 {
     public List<Integer> circularPermutation(int n, int start) {
-        List<Integer> gray = new ArrayList<>(List.of(0));
+        List<Integer> gray = new ArrayList<>();
         int index = -1;
         for (int k = 0, add = 1 << k; k < n; k++, add = 1 << k) {
             for (int i = gray.size() - 1; i >= 0; i--) {
