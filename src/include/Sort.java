@@ -97,9 +97,65 @@ public class Sort {
         DualPivotQuickSort0(nums, 0, nums.length - 1);
     }
 
+    private static void adjustBigHeap(int[] arr, int parent, int end) {
+        int tmp = arr[parent];
+        for (int child = 2 * parent + 1; child < end; child = parent * 2 + 1) {
+            if (child < end - 1 && arr[child] < arr[child + 1])
+                child++;
+            if (arr[child] > tmp) {
+                arr[parent] = arr[child];
+                parent = child;
+            }
+            else
+                break;
+        }
+        arr[parent] = tmp;
+    }
+
+    public static void bigHeapSort(int[] arr) {
+        int len = arr.length;
+        for (int i = len / 2 - 1; i >= 0; --i) {
+            adjustBigHeap(arr, i, len);
+        }
+        for (int i = len - 1; i > 0; --i) {
+            Swap(arr, 0, i);
+            adjustBigHeap(arr, 0, i);
+        }
+
+    }
+
+    private static void adjustSmallHeap(int[] arr, int parent, int end) {
+        int tmp = arr[parent];
+        for (int child = parent * 2 + 1; child < end; child = parent * 2 + 1) {
+            if (child < end - 1 && arr[child] > arr[child + 1])
+                child++;
+            if (arr[child] < tmp) {
+                arr[parent] = arr[child];
+                parent = child;
+            }
+            else
+                break;
+        }
+        arr[parent] = tmp;
+    }
+
+    public static void smallHeapSort(int[] arr) {
+        int len = arr.length;
+        for (int i = len / 2 - 1; i >= 0; --i) {
+            adjustSmallHeap(arr, i, len);
+        }
+        for (int i = len - 1; i > 0; --i) {
+            Swap(arr, 0, i);
+            adjustSmallHeap(arr, 0, i);
+        }
+    }
+
     public static void main(String args[]) {
         int[] nums = {5,2,3,2,2,4,6,8};
-        DualPivotQuickSort(nums);
+        bigHeapSort(nums);
+        System.out.println(Arrays.toString(nums));
+        System.out.println("====================");
+        smallHeapSort(nums);
         System.out.print(Arrays.toString(nums));
     }
 
