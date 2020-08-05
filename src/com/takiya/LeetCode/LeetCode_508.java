@@ -4,46 +4,47 @@ import include.TreeNode;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class LeetCode_508 {
-    static int max = 0;
-    static Map<Integer, Integer> map;
-    public static int[] findFrequentTreeSum(TreeNode root) {
-        map = new HashMap<>();
-        postOrder(root);
-        ArrayList<Integer> list = new ArrayList<>();
+    Map<Integer, Integer> map = new HashMap<>();
+    int max = 0;
+    public int[] findFrequentTreeSum(TreeNode root) {
+        if (root == null)
+            return new int[]{};
+        int sum = helper(root);
+        int count = map.getOrDefault(sum, 0) + 1;
+        map.put(sum, count);
+        max = Math.max(max, count);
+        List<Integer> list = new ArrayList<>();
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             if (entry.getValue() == max)
                 list.add(entry.getKey());
         }
-        int[] res = new int[list.size()];
-        for (int i = 0; i < list.size(); ++i)
+        int size = list.size();
+        int[] res = new int[size];
+        for (int i = 0; i < size; ++i)
             res[i] = list.get(i);
         return res;
     }
-
-    public static int postOrder(TreeNode root) {
-        int sum = 0;
-        if (root == null)   return sum;
-        sum += postOrder(root.left);
-        sum += postOrder(root.right);
-        sum += root.val;
-        int count = 1;
-        if (map.containsKey(sum)) {
-            count = map.get(sum) + 1;
-            map.put(sum, count);
+    int helper(TreeNode root) {
+        int count;
+        int left = 0;
+        if (root.left != null) {
+            left = helper(root.left);
+            count = map.getOrDefault(left, 0) + 1;
+            max = Math.max(count, max);
+            map.put(left, count);
         }
-        else
-            map.put(sum, 1);
-        max = Math.max(max, count);
-        return sum;
+        int right = 0;
+        if (root.right != null) {
+            right = helper(root.right);
+            count = map.getOrDefault(right, 0) + 1;
+            max = Math.max(count, max);
+            map.put(right, count);
+        }
+        return root.val + left + right;
     }
 
-    public static void main(String args[]) {
-        TreeNode root = new TreeNode(5);
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(-3);
-        findFrequentTreeSum(root);
-    }
 }

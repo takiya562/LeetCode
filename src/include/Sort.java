@@ -1,6 +1,5 @@
 package include;
 
-import java.util.Arrays;
 
 public class Sort {
     private static int getIndex(int[] nums, int low, int high) {
@@ -147,16 +146,15 @@ public class Sort {
         for (int i = len - 1; i > 0; --i) {
             Swap(arr, 0, i);
             adjustSmallHeap(arr, 0, i);
+
         }
     }
 
-    public static void main(String args[]) {
-        int[] nums = {5,2,3,2,2,4,6,8};
-        bigHeapSort(nums);
-        System.out.println(Arrays.toString(nums));
-        System.out.println("====================");
-        smallHeapSort(nums);
-        System.out.print(Arrays.toString(nums));
+
+
+    public static void main(String[] args) {
+        int[] nums = {25, 84, 21, 47, 15, 27, 68, 35, 20};
+        DualPivotQuickSort(nums);
     }
 
 }

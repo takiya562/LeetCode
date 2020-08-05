@@ -1,31 +1,34 @@
 package com.takiya.LeetCode;
 
 public class LeetCode_440 {
-    public int findKthNumber(int n, int k) {
-        int pos = 1;    //表示当前第几个数字
+    public static int findKthNumber(int n, int k) {
+        int pos = 1;
         int num = 1;
         while (pos < k) {
-            int count = getCount(num, n);
-            if (pos + count - 1 < k) {
-                num++;
-                pos += count;
-            } else if (pos + count - 1 >= k) {
+            int count = count(num, n);
+            if (pos + count >= k) {
                 num *= 10;
                 pos++;
+            } else {
+                num++;
+                pos += (count + 1);
             }
         }
         return num;
     }
-
-    public int getCount(int prefix, int n) {
+    static int count(int prefix, int n) {
         long cur = prefix;
         long next = cur + 1;
         int count = 0;
-        while (cur <= n) {
-            count += Math.min(n + 1, next) - cur;
+        while (cur * 10 <=  n) {
             cur *= 10;
             next *= 10;
+            count += Math.min(next, n + 1) - cur;
         }
         return count;
+    }
+
+    public static void main(String[] args) {
+        findKthNumber(681692778, 351251360);
     }
 }

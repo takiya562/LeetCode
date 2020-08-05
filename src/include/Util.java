@@ -54,6 +54,17 @@ public class Util {
         }
         return (int)A;
     }
+    public static int QuickPow(int a, int b) {
+        long A = 1;
+        long T = a;
+        while (b != 0) {
+            if ((b & 1) == 1)
+                A = (A * T);
+            T = (T * T);
+            b >>= 1;
+        }
+        return (int)A;
+    }
 
     public static int numberOfOne(int n){
         int count = 0;
@@ -84,7 +95,14 @@ public class Util {
         quickSort0(arr, l + 1, end);
     }
 
-    public static void main(String args[]) {
+    public static int getNumLength(long num) {
+        num = num > 0 ? num : -num;
+        if (num == 0)
+            return 1;
+        return (int)(Math.log10(num) + 1);
+    }
 
+    public static void main(String args[]) {
+        System.out.print(QuickPow(10, 3));
     }
 }
