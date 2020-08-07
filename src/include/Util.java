@@ -1,6 +1,8 @@
 package include;
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Util {
@@ -103,6 +105,6 @@ public class Util {
     }
 
     public static void main(String args[]) {
-        System.out.print(QuickPow(10, 3));
+
     }
 }
