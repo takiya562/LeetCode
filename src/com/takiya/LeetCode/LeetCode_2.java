@@ -7,30 +7,33 @@ public class LeetCode_2 {
         ListNode(int x) { val = x; }
     }
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode l3 = new ListNode(0);
-        ListNode p = null;
-        ListNode n;
         int carry = 0;
-        int temp, i, j;
-        while(l1 != null || l2 != null || carry !=0)
-        {
-            i = l1 != null ? l1.val : 0;
-            j = l2 != null ? l2.val : 0;
-            temp = i + j + carry;
-            if (p == null)
-            {
-                l3.val = temp % 10;
-                p = l3;
-            }else {
-                n = new ListNode(temp % 10);
-                p.next = n;
-                p = p.next;
+        ListNode p1 = l1;
+        ListNode p2 = l2;
+        ListNode dummy = new ListNode(-1);
+        ListNode p = dummy;
+        while (l1 != null || l2 != null) {
+            int val = 0;
+            if (l1 == null) {
+                val = l2.val + carry;
+                l2 = l2.next;
             }
-            carry = temp / 10;
-            l1 = l1 != null ? l1.next : null;
-            l2 = l2 != null ? l2.next : null;
+            else if (l2 == null) {
+                val = l1.val + carry;
+                l1 = l1.next;
+            }
+            else {
+                val = l1.val + l2.val + carry;
+                l1 = l1.next;
+                l2 = l2.next;
+            }
+            carry = val / 10;
+            p.next = new ListNode(val % 10);
+            p = p.next;
         }
-        return l3;
+        if (carry != 0)
+            p.next = new ListNode(carry);
+        return dummy.next;
     }
     public static void main(String args[])
     {

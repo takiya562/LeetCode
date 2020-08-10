@@ -1,5 +1,7 @@
 package com.takiya.LeetCode;
 
+import org.junit.Test;
+
 import java.util.Stack;
 
 public class LeetCode_5 {
@@ -43,32 +45,32 @@ public class LeetCode_5 {
     }
     public String longestPalindrome_2(String s) {
         int len = s.length();
-        if (len < 2)    return s;
-        boolean[][] dp = new boolean[len][len];
-        for (int i = 0; i < len; ++i)
-            dp[i][i] = true;
-
-        int maxLen = 1;
+        if (len < 2)
+            return s;
         int start = 0;
-        for (int j = 1; j < len; ++j) {
-            for (int i = 0; i < j; ++i) {
-                if (s.charAt(i) == s.charAt(j)) {
-                    if (j - i < 3)
-                        dp[i][j] = true;
-                    else
-                        dp[i][j] = dp[i + 1][j - 1];
-                }
-                else
-                    dp[i][j] = false;
-                if (dp[i][j]) {
-                    int curLen = j - i + 1;
-                    if (maxLen < curLen) {
-                        maxLen = curLen;
-                        start = i;
+        int maxLen = 1;
+        boolean[][] dp = new boolean[len][len];
+        for (int i = 0; i < len; ++i) {
+            for (int j = i; j >= 0; --j) {
+                if (i == j)
+                    dp[j][i] = true;
+                else {
+                    dp[j][i] = s.charAt(i) == s.charAt(j);
+                    if (i - j + 1 > 2) {
+                        dp[j][i] = dp[j][i] && dp[j + 1][i - 1];
                     }
+                }
+                if (dp[j][i] && i - j + 1 > maxLen) {
+                    maxLen = i - j + 1;
+                    start = j;
                 }
             }
         }
-        return s.substring(start, start + maxLen);
+        return s.substring(start, maxLen + start);
+    }
+
+    @Test
+    public void test() {
+        System.out.println(longestPalindrome_2("babad"));
     }
 }

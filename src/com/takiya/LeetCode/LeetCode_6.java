@@ -1,5 +1,7 @@
 package com.takiya.LeetCode;
 
+import java.util.ArrayList;
+
 public class LeetCode_6 {
     public static String convert_backup(String s, int numRows) {
         int len = s.length();
@@ -34,35 +36,24 @@ public class LeetCode_6 {
     public static String convert(String s, int numRows) {
         if (numRows == 1)
             return s;
-        StringBuffer str = new StringBuffer();
-        int gap = (numRows - 1) * 2;
-        int index_1, index_2;
-        for (int i = 0; i < numRows; i++) {
-            if (i != 0 && i != numRows-1) {
-                index_1 = i;
-                index_2 = gap - i;
-                while (index_1 < s.length() || index_2 < s.length()) {
-                    if (index_1 < s.length()) {
-                        str.append(s.charAt(index_1));
-                    }
-                    index_1 += gap;
-                    if (index_2 < s.length()) {
-                        str.append(s.charAt(index_2));
-                    }
-                    index_2 += gap;
-                }
-                continue;
-            }
-            index_1 = i;
-            while (index_1 < s.length()) {
-                str.append(s.charAt(index_1));
-                index_1 += gap;
-            }
+        ArrayList<StringBuilder> list = new ArrayList<>();
+        for (int i = 0; i < Math.min(numRows, s.length()); ++i)
+            list.add(new StringBuilder());
+        boolean goDown = false;
+        int curRow = 0;
+        for (char c : s.toCharArray()) {
+            StringBuilder sb = list.get(curRow);
+            sb.append(c);
+            if (curRow == 0 || curRow == numRows - 1) goDown = !goDown;
+            curRow += goDown ? 1 : -1;
         }
-        return str.toString();
+        StringBuilder res = new StringBuilder();
+        for (StringBuilder sb : list)
+            res.append(sb.toString());
+        return res.toString();
     }
     public static void main(String args[]) {
-        String result = convert("A", 1);
+        String result = convert("PAYPALISHIRING", 3);
         System.out.print(result);
     }
 }

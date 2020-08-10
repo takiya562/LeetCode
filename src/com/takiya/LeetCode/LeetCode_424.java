@@ -1,6 +1,8 @@
 package com.takiya.LeetCode;
 
 
+import org.junit.Test;
+
 public class LeetCode_424 {
     public int characterReplacement(String s, int k) {
         char[] chars = s.toCharArray();
@@ -17,5 +19,12 @@ public class LeetCode_424 {
             }
         }
         return chars.length - L;
+    }
+
+    @Test
+    public void test() {
+        String s = "AABABBA";
+        int k = 1;
+        characterReplacement(s, 1);
     }
 }

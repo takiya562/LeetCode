@@ -5,46 +5,21 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LeetCode_3 {
-//    public static int lengthOfLongestSubstring(String s) {
-//        int result = 0;
-//        int i = 0,j = 0;
-//        int str_len = s.length();
-//        char temp;
-//        int temp_len = 0;
-//        Map<Character, Integer> map = new HashMap<>();
-//        while(i < str_len&&(i+j) <str_len)
-//        {
-//            temp = s.charAt(i+j);
-//            if (map.get(temp)==null)
-//            {
-//                map.put(s.charAt(i+j),1);
-//                temp_len++;
-//                j++;
-//            }else if (map.get(temp)==1){
-//                map.clear();
-//                temp_len = 0;
-//                i++;
-//                j=0;
-//            }
-//            result = result > temp_len ? result : temp_len;
-//        }
-//        return result;
-//    }
-    public static int lengthOfLongestSubstring(String s)
-    {
-        int result = 0;
-        int left = 0;   //窗口的左边界（出现重复字符时移动左边界，只能向左移动）
-        Map<Character, Integer> map = new HashMap<>();
-        for (int i=0; i<s.length(); i++)
-        {
-            if (map.containsKey(s.charAt(i)))
-            {
-                left = Math.max(left, map.get(s.charAt(i)) + 1);
+    public static int lengthOfLongestSubstring(String s) {
+        char[] chars = s.toCharArray();
+        int l = 0;
+        HashMap<Character, Integer> map = new HashMap<>();
+        int max = 0;
+        for (int r = 0; r < chars.length; ++r) {
+            char cur = chars[r];
+            if (map.containsKey(cur)) {
+                max = Math.max(max, r - l);
+                l = Math.max(l, map.get(cur) + 1);
             }
-            map.put(s.charAt(i), i);
-            result = Math.max(result, i-left+1);
+            map.put(cur, r);
         }
-        return result;
+        max = Math.max(max, chars.length - l);
+        return max;
     }
     public static void main(String args[])
     {
