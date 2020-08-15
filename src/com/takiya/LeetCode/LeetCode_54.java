@@ -1,50 +1,36 @@
 package com.takiya.LeetCode;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class LeetCode_54 {
-    public static List<Integer> spiralOrder(int[][] matrix) {
-        List<Integer> ans = new ArrayList<>();
-        int rows = matrix.length;
-        if (rows == 0) return ans;
-        int cols = matrix[0].length;
-        int len = rows * cols;
-        int size = 0;
-        int[] dirs = {0,1,0,-1,0};
-        int dir = 0;
-        int row = 0, col = 0;
-        int round = 0;
-        while(size != len) {
-            ans.add(matrix[row][col]);
-            size++;
-            switch (dir) {
-                case 0:
-                    if (col == cols - 1 - round)
-                        dir = (dir + 1) % 4;
-                    break;
-                case 1:
-                    if (row == rows - 1 - round)
-                        dir = (dir + 1) % 4;
-                    break;
-                case 2:
-                    if (col == round)
-                        dir = (dir + 1) % 4;
-                    break;
-                case 3:
-                    if (row == round + 1) {
-                        dir = (dir + 1) % 4;
-                        ++round;
-                    }
-                    break;
-            }
-            row += dirs[dir];
-            col += dirs[dir+1];
+    public List<Integer> spiralOrder(int[][] matrix) {
+        int m = matrix.length;
+        List<Integer> list = new ArrayList<>();
+        if (m == 0)
+            return list;
+        int n = matrix[0].length;
+        int t = (Math.min(m, n) + 1) / 2;
+        for (int i = 0; i < t; ++i) {
+            for (int j = i; j <= n - i - 1; ++j)
+                list.add(matrix[i][j]);
+            for (int j = i + 1; j <= m - i - 1; ++j)
+                list.add(matrix[j][n - i - 1]);
+            for (int j = n - i - 2; j >= i && m - i - 1 != i; --j)
+                list.add(matrix[m - i - 1][j]);
+            for (int j = m - i - 2; j >= i + 1 && n - i - 1 != i; --j)
+                list.add(matrix[j][i]);
         }
-        return ans;
+        return list;
     }
-    public static void main(String args[]) {
-        int[][] matrix = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
-        spiralOrder(matrix);
+    @Test
+    public void test() {
+        int[][] matrix = {{7},{9},{6}};
+        List<Integer> list = spiralOrder(matrix);
+        list.forEach(x -> {
+            System.out.print(x + " ");
+        });
     }
 }

@@ -1,42 +1,43 @@
 package com.takiya.LeetCode;
 
 
+import org.junit.Test;
+
 import java.util.*;
 
 public class LeetCode_17 {
-    static Map<Character, String> map = new HashMap<>();
-    public static List<String> letterCombinations(String digits) {
-        List<String> result = new ArrayList<>();
-        int max_level = digits.length();
-        if (max_level == 0)
-            return result;
-        map.put('2',"abc");
-        map.put('3',"def");
-        map.put('4',"ghi");
-        map.put('5',"jkl");
-        map.put('6',"mno");
-        map.put('7',"pqrs");
-        map.put('8',"tuv");
-        map.put('9',"wxyz");
-        String first_level_str = map.get(digits.charAt(0));
-        for (int index = 0; index < first_level_str.length(); index++)
-            preTravel(digits, result, "", max_level, 0, index, first_level_str);
-        return result;
+    String[] phone = {
+            "",
+            "!@#", "abc", "def",
+            "ghi", "jkl", "mno",
+            "pqrs", "tuv", "wxyz"
+    };
+    public  List<String> letterCombinations(String digits) {
+        char[] chars = digits.toCharArray();
+        List<String> ans = new LinkedList<>();
+        if (chars.length == 0)
+            return ans;
+        traceBack(ans, chars, 0);
+        return ans;
     }
-    public static void preTravel(String digits, List<String> result, String str, int max_level, int level, int index, String level_str) {
-        if (level == max_level-1) {
-            str += level_str.charAt(index);
-            result.add(str.toString());
+    private  void traceBack(List<String> ans, char[] chars, int index) {
+        if (index == chars.length) {
+            ans.add(new String(chars));
+            return;
         }
-        else {
-            str += level_str.charAt(index);
-            String temp_str = map.get(digits.charAt(level+1));
-            for (int i = 0; i < temp_str.length(); i++)
-                preTravel(digits, result, str, max_level, level + 1, i, temp_str);
+        int idx = chars[index] - '0';
+        char tmp = chars[index];
+        for (char c : phone[idx].toCharArray()) {
+            chars[index] = c;
+            traceBack(ans, chars, index + 1);
+            chars[index] = tmp;
         }
     }
-    public static void main(String args[]) {
-        List<String> result = letterCombinations("234");
-        System.out.print(result.toString());
+
+    @Test
+    public void test() {
+        String digits = "23";
+        List<String> res = letterCombinations(digits);
+        res.stream().forEach(System.out::println);
     }
 }

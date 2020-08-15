@@ -1,42 +1,40 @@
 package com.takiya.LeetCode;
 
-import java.util.Stack;
+import org.junit.Test;
+
 
 public class LeetCode_8 {
-    private static int edge = Integer.MIN_VALUE / 10;
     public int myAtoi(String str) {
-        int res = 0;
-        str = str.trim();
-        if (str.equals(""))
+        char[] chars = str.trim().toCharArray();
+        int n = chars.length;
+        if (n == 0)
             return 0;
-        char first = str.charAt(0);
-        boolean isNegative = str.charAt(0) == '-' ? true : false;
-        int digital;
-        boolean isFirst = true;
-        for (int c : str.toCharArray()) {
-            if (isFirst && (c == '-' || c == '+')) {
-                isFirst = false;
-                continue;
-            }
-            if (isFirst)
-                isFirst = false;
-            if (c < 48 || c > 57)
-                break;
-            else {
-                digital = c - '0';
-                if (res < edge || (res == edge && digital > 8)) {
-                    res = Integer.MIN_VALUE;
-                    break;
-                }
-                res = res * 10 - digital;
-            }
+        int index = 0;
+        boolean negative = false;
+        if (chars[index] == '-') {
+            negative = true;
+            index++;
+        } else if (chars[index] == '+') {
+            index++;
+        } else if (!Character.isDigit(chars[index])) {
+            return 0;
         }
-        if (!isNegative) {
-            if (res == Integer.MIN_VALUE)
-                return Integer.MAX_VALUE;
-            else
-                return -res;
+        int ans = 0;
+        while (index < n && Character.isDigit(chars[index])) {
+            int cur = chars[index] - '0';
+            if (ans > (Integer.MAX_VALUE - cur) / 10)
+                return negative ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+            ans *= 10;
+            ans += cur;
+            index++;
         }
-        return res;
+        return negative ? -ans : ans;
+    }
+
+    @Test
+    public void test() {
+        String str = "-91283472332";
+        int res = myAtoi(str);
+        System.out.println(res);
     }
 }
