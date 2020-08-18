@@ -1,66 +1,41 @@
 package com.takiya.LeetCode;
 
 public class LeetCode_34 {
-    /*
-    public static int[] searchRange(int[] nums, int target) {
-        int[] result = {-1,-1};
-        int left = binarySearchAlter(nums, target, true);
-        if (left == nums.length || nums[left] != target)
-            return result;
-        int right = binarySearchAlter(nums, target, false);
-        result[0] = left;
-        result[1] = right-1;
-        return result;
+    public int[] searchRange(int[] nums, int target) {
+        if (nums.length == 0)
+            return new int[] {-1, -1};
+        int l = bisect_left(nums, target);
+        if (l == -1)
+            return new int[] {-1, -1};
+        int r = bisect_right(nums, target);
+        return new int[] {l, r - 1};
     }
-    public static int binarySearchAlter(int[] nums, int target, boolean left) {
-        int low = 0;
-        int high = nums.length;
-        while (low < high) {
-            int mid = (low+high)/2;
-            if (nums[mid] > target || (left && nums[mid] == target))
-                high = mid;
-            else
-                low = mid+1;
-        }
-        return low;
-    }
-    */
-    public static int binarySearch(int[] nums, int target, int left, int right) {
-        while (left <= right) {
-            int mid = (left+right)/2;
-            if (nums[mid] == target)
-                return mid;
-            else if (nums[mid] > target)
-                right = mid-1;
-            else if (nums[mid] < target)
-                left = mid+1;
-        }
-        return -1;
-    }
-    public static int[] searchRange(int[] nums, int target) {
-        int[] result = {-1, -1};
-        int first;
-        if ((first = binarySearch(nums, target, 0, nums.length-1)) != -1) {
-            int prev = first;
-            int post = first;
-            int last_prev=prev, last_post=post;
-            while (prev != -1) {
-                last_prev = prev;
-                prev = binarySearch(nums, target, 0, prev-1);
+    private int bisect_left(int[] nums, int t) {
+        int l = 0;
+        int r = nums.length - 1;
+        while (l < r) {
+            int mid = (l + r) >>> 1;
+            int midVal = nums[mid];
+            if (midVal >= t) {
+                r = mid;
+            } else {
+                l = mid + 1;
             }
-            while (post != -1) {
-                last_post = post;
-                post = binarySearch(nums, target, post+1, nums.length-1);
-            }
-            return new int[]{last_prev, last_post};
         }
-        return new int[]{-1, -1};
+        return nums[l] == t ? l : -1;
     }
-    public static void main(String args[]) {
-        int[] nums = {5,7,7,8,8,10};
-        int[] result = searchRange(nums, 8);
-       // int result = binarySearch(nums, 0 ,nums.length-1, 8);
-        for (int i = 0; i < result.length; i++)
-            System.out.println(result[i]);
+    private int bisect_right(int[] nums, int t) {
+        int l = 0;
+        int r = nums.length;
+        while (l < r) {
+            int mid = (l + r) >>> 1;
+            int midVal = nums[mid];
+            if (midVal <= t) {
+                l = mid + 1;
+            } else {
+                r = mid;
+            }
+        }
+        return l;
     }
 }

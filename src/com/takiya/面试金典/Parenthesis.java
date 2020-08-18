@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.LinkedList;
 import java.util.List;
 
-public class generateParenthesis {
+public class Parenthesis {
     public List<String> generateParenthesis(int n) {
         List<String> ans = new LinkedList<>();
         if (n == 0)

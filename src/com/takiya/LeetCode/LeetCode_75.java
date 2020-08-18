@@ -1,25 +1,43 @@
 package com.takiya.LeetCode;
 
+import org.junit.Test;
+
+import java.util.Arrays;
+
 public class LeetCode_75 {
     public void sortColors(int[] nums) {
-        int len = nums.length;
-        int red = 0, blue = len - 1;
-        int cur = 0;
-        while (cur <= blue) {
-            if (nums[cur] == 0) {
-                if (cur == red) {
-                    cur++;
+        int n = nums.length;
+        if (n == 0)
+            return;
+        int red = 0, blue = n - 1;
+        int index = 0;
+        while (index <= blue) {
+            int cur = nums[index];
+            if (cur == 0) {
+                if (index == red) {
+                    index++;
                     red++;
                 } else {
-                    nums[cur] = nums[red];
+                    nums[index] = nums[red];
                     nums[red++] = 0;
                 }
-            } else if (nums[cur] == 2) {
-                nums[cur] = nums[blue];
-                nums[blue--] = 2;
+            } else if (cur == 2) {
+                if (index == blue) {
+                    index++;
+                    blue--;
+                } else {
+                    nums[index] = nums[blue];
+                    nums[blue--] = 2;
+                }
             } else {
-                cur++;
+                index++;
             }
         }
+    }
+    @Test
+    public void test() {
+        int[] nums = {2,0,2,1,1,0};
+        sortColors(nums);
+        Arrays.stream(nums).forEach(x -> System.out.print(x + " "));
     }
 }

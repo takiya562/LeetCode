@@ -4,11 +4,9 @@ import include.ListNode;
 
 public class LeetCode_24 {
     public static ListNode swapPairs(ListNode head) {
-        if (head == null)
-            return null;
-        if (head.next == null)
+        if (head == null || head.next == null)
             return head;
-        ListNode preHead =new ListNode(-1);
+        ListNode preHead = new ListNode(-1);
         ListNode pre = preHead;
         ListNode odd = head;
         ListNode even = head.next;
@@ -17,9 +15,9 @@ public class LeetCode_24 {
             even.next = odd;
             pre.next = even;
             pre = odd;
-            odd = odd.next;
+            odd = pre.next;
             if (odd == null)
-                return preHead.next;
+                break;
             even = odd.next;
         }
         return preHead.next;
