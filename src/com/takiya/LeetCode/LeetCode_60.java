@@ -2,6 +2,8 @@ package com.takiya.LeetCode;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
 public class LeetCode_60 {
     public String getPermutation(int n, int k) {
         int[] nums = new int[n];
@@ -20,7 +22,7 @@ public class LeetCode_60 {
             else
                 cur = k / sum + 1;
             swap(nums, i, i + cur - 1);
-            reserve(nums, i + 1, i + cur - 1);
+            move(nums, i + cur - 1, i + 1);
             k -= (cur - 1) * sum;
         }
         StringBuilder sb = new StringBuilder();
@@ -28,14 +30,13 @@ public class LeetCode_60 {
             sb.append(num);
         return sb.toString();
     }
-    private void reserve(int[] nums, int l, int r) {
-        while (l < r) {
-            int tmp = nums[l];
-            nums[l] = nums[r];
-            nums[r] = tmp;
-            l++;
-            r--;
-        }
+    private void move(int[] nums, int i, int j) {
+        if (i < j)
+            return;
+        int tmp = nums[i];
+        for (int n = i - 1; n >= j; n--)
+            nums[n + 1] = nums[n];
+        nums[j] = tmp;
     }
 
     private void swap(int[] nums, int i, int j) {
@@ -45,7 +46,13 @@ public class LeetCode_60 {
     }
     @Test
     public void test() {
-        String res = getPermutation(4, 19);
+        String res = getPermutation(3, 2);
         System.out.print(res);
+    }
+    @Test
+    public void testMove() {
+        int[] nums = {4,2,3,1};
+        move(nums, 3, 1);
+        Arrays.stream(nums).forEach(x -> System.out.print(x + " "));
     }
 }

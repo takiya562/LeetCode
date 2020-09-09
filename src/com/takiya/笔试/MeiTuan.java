@@ -1,5 +1,6 @@
 package com.takiya.笔试;
 
+import include.TreeNode;
 import org.junit.Test;
 
 import java.util.*;
@@ -158,6 +159,21 @@ public class MeiTuan {
             count += recursion(i, n, index + 1, m);
         }
         return count;
+    }
+    public int solution6(TreeNode t, int target) {
+        int ret = -1;
+        TreeNode p = t;
+        while (p != null) {
+            if (p.val > target) {
+                ret = p.val;
+                p = p.left;
+            } else if (p.val < target) {
+                p = p.right;
+            } else {
+                return p.val;
+            }
+        }
+        return ret;
     }
 
     public static void main(String[] args) {

@@ -1,51 +1,42 @@
 package com.takiya.LeetCode;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 public class LeetCode_90 {
-    /* 循环迭代 */
-    public List<List<Integer>> enumerate(int[] nums) {
-        int len = nums.length;
-        List<List<Integer>> ans = new ArrayList<>();
-        int start = 1;          //记录上一次的新解从哪里开始
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
+        List<List<Integer>> ans = new LinkedList<>();
         ans.add(new ArrayList<>());
         Arrays.sort(nums);
-        for (int i = 0; i < len; ++i) {
-            List<List<Integer>> ans_temp = new ArrayList<>();
-            for (int j = 0; j < ans.size(); ++j) {
-                if (i > 0 && nums[i] == nums[i-1] && j < start)
-                    continue;
-                List<Integer> item = new ArrayList<>(ans.get(j));
-                item.add(nums[i]);
-                ans_temp.add(item);
-            }
-            start = ans.size();
-            ans.addAll(ans_temp);
-        }
+        backTrace(ans, new ArrayList<>(), nums, 0);
         return ans;
     }
 
-    /* 回溯 */
-    public static List<List<Integer>> subSetWithDup(int[] nums) {
-        Arrays.sort(nums);
-        List<List<Integer>> ans = new ArrayList<>();
-        backTrack(nums, new ArrayList<>(), ans, 0);
-        return ans;
-    }
-    public static void backTrack(int[] nums, List<Integer> temp, List<List<Integer>> ans, int index) {
-        ans.add(new ArrayList<>(temp));
-        for (int i = index; i < nums.length; ++i) {
-            if (i > index && nums[i] == nums[i-1])
+    private void backTrace(List<List<Integer>> ans, List<Integer> list, int[] nums, int index) {
+        if (index == nums.length)
+            return;
+        int size = list.size();
+        for (int i = index; i < nums.length; i++) {
+            if (i != index && nums[i] == nums[i - 1])
                 continue;
-            temp.add(nums[i]);
-            backTrack(nums, temp, ans, i + 1);
-            temp.remove(temp.size() - 1);
+            list.add(nums[i]);
+            ans.add(new ArrayList<>(list));
+            backTrace(ans, list, nums, i + 1);
+            list.remove(size);
         }
     }
-    public static void main(String args[]) {
+    @Test
+    public void test() {
         int[] nums = {1,2,2};
-        subSetWithDup(nums);
+        List<List<Integer>> lists = subsetsWithDup(nums);
+        lists.forEach(list -> {
+            for (int num : list)
+                System.out.print(num + " ");
+            System.out.println();
+        });
     }
 }
