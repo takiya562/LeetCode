@@ -10,4 +10,8 @@ public class LeetCode_137 {
         }
         return res1 ^ res2;
     }
+
+    public static void main(String[] args) {
+        System.out.println(~1);
+    }
 }

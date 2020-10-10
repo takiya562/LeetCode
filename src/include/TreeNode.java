@@ -10,41 +10,134 @@ public class TreeNode {
     public TreeNode right;
     public TreeNode(int x) { val = x; }
 
-    /* 非递归后跟遍历 */
-    public void postOrder(TreeNode root) {
-        if (root == null) return;
-        Stack<TreeNode> stack = new Stack<>();
-        stack.push(root);
-        TreeNode pre = null;
-        while (!stack.isEmpty()) {
-            TreeNode cur = stack.peek();
-            if ((cur.left == null && cur.right == null) || (pre != null && (pre == cur.left || pre == cur.right)))
-            {
-                System.out.print(cur.val);
-                stack.pop();
-                pre = cur;
-            }
-            else {
-                if (cur.right != null)
-                    stack.push(cur.right);
-                if (cur.left != null)
-                    stack.push(cur.left);
-            }
-        }
-    }
-
-    public List<Integer> preOrderTraversal(TreeNode root) {
-        List<Integer> res = new ArrayList<>();
+    public void treeTraversalTemplate(TreeNode root) {
+        if (root == null)
+            return;
         Stack<TreeNode> stack = new Stack<>();
         TreeNode cur = root;
         while (cur != null || !stack.isEmpty()) {
             while (cur != null) {
                 stack.push(cur);
-                res.add(cur.val);
+                //preOrder
                 cur = cur.left;
             }
-            cur = stack.pop().right;
+            cur = stack.pop();
+            //midOrder
+            cur = cur.right;
+            //postOrder
         }
-        return res;
+    }
+
+    public List<Integer> preOrder(TreeNode root) {
+        List<Integer> ans = new ArrayList<>();
+        if (root == null)
+            return ans;
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = root;
+        while (cur != null || !stack.isEmpty()) {
+            while (cur != null) {
+                stack.push(cur);
+                ans.add(cur.val);
+                cur = cur.left;
+            }
+            cur = stack.pop();
+            cur = cur.right;
+        }
+        return ans;
+    }
+
+    public List<Integer> midOrder(TreeNode root) {
+        List<Integer> ans = new ArrayList<>();
+        if (root == null)
+            return ans;
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = root;
+        while (cur != null || !stack.isEmpty()) {
+            while (cur != null) {
+                stack.push(cur);
+                cur = cur.left;
+            }
+            cur = stack.pop();
+            ans.add(cur.val);
+            cur = cur.right;
+        }
+        return ans;
+    }
+
+    public List<Integer> postOrder(TreeNode root) {
+        List<Integer> ans = new ArrayList<>();
+        if (root == null)
+            return ans;
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = root;
+        TreeNode last = null;
+        while (cur != null || !stack.isEmpty()) {
+            while (cur != null) {
+                stack.push(cur);
+                cur = cur.left;
+            }
+            cur = stack.peek();
+            if (cur.right == null || last == cur.right) {
+                ans.add(cur.val);
+                last = cur;
+                stack.pop();
+                cur = null;
+            } else {
+                cur = cur.right;
+            }
+        }
+        return ans;
+    }
+
+    public List<Integer> morrirsTraversal(TreeNode root) {
+        List<Integer> ans = new ArrayList<>();
+        if (root == null)
+            return ans;
+        TreeNode cur = root, pre;
+        while (cur != null) {
+            if (cur.left == null) {
+                ans.add(cur.val);
+                cur = cur.right;
+            } else {
+                pre = cur.left;
+                while (pre.right != null && pre.right != cur)
+                    pre = pre.right;
+                if (pre.right == null) {
+                    pre.right = cur;
+                    cur = cur.left;
+                } else {
+                    pre.right = null;
+                    ans.add(cur.val);
+                    cur = cur.right;
+                }
+            }
+        }
+        return ans;
+    }
+
+    public List<Integer> preOrderMorrirsTraversal(TreeNode root) {
+        List<Integer> ans = new ArrayList<>();
+        if (root == null)
+            return ans;
+        TreeNode cur = root, pre;
+        while (cur != null) {
+            if (cur.left == null) {
+                ans.add(cur.val);
+                cur = cur.right;
+            } else {
+                pre = cur.left;
+                while (pre.right != null && pre.right != cur)
+                    pre = pre.right;
+                if (pre.right == null) {
+                    ans.add(cur.val);
+                    pre.right = cur;
+                    cur = cur.left;
+                } else {
+                    pre.right = null;
+                    cur = cur.right;
+                }
+            }
+        }
+        return ans;
     }
 }

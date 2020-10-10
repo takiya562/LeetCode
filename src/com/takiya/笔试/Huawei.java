@@ -163,7 +163,39 @@ public class Huawei {
         System.out.println(max);
     }
 
+    public static boolean checkInclusion(String s1, String s2) {
+        int[] counts = new int[26];
+        int n = s1.length();
+        for (char c : s1.toCharArray()) {
+            int index = c - 'a';
+            counts[index]++;
+        }
+        int l = 0;
+        int[] window = new int[26];
+        for (int r = 0; r < s2.length(); r++) {
+            int index =  s2.charAt(r) - 'a';
+            window[index]++;
+            if (r - l + 1 == n) {
+                if(verify(counts, window))
+                    return true;
+                window[s2.charAt(l++) - 'a']--;
+            }
+        }
+        return false;
+    }
+
+    private static boolean verify(int[] counts, int[] window) {
+        for (int i = 0; i < counts.length; i++) {
+            if (counts[i] != window[i])
+                return false;
+        }
+        return true;
+    }
+
+
+
     public static void main(String[] args) {
-        solution3();
+        boolean b = checkInclusion("ab", "ebibaool");
+        System.out.println(b);
     }
 }

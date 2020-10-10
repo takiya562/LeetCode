@@ -42,6 +42,45 @@ public class LeetCode_148 {
         }
         return preHead.next;
     }
+
+    public ListNode listQuickSort(ListNode head) {
+        if (head == null || head.next == null)
+            return head;
+        listQuickSort0(head, null);
+        return head;
+    }
+
+    private void listQuickSort0(ListNode left, ListNode right) {
+        if (left == right || left.next == right)
+            return;
+        ListNode p = getPartition(left, right);
+        listQuickSort0(left, p);
+        listQuickSort0(p.next, right);
+    }
+
+    private ListNode getPartition(ListNode left, ListNode right) {
+        if (left == right || left.next == right)
+            return left;
+        ListNode p = left, q = left.next;
+        int pivot = left.val;
+        while (q != right) {
+            if (q.val < pivot) {
+                p = p.next;
+                listValSwap(p, q);
+            }
+            q = q.next;
+        }
+        listValSwap(left, p);
+        return p;
+    }
+
+    private void listValSwap(ListNode p, ListNode q) {
+        if (p == q)
+            return;
+        int tmp = p.val;
+        p.val = q.val;
+        q.val = tmp;
+    }
     @Test
     public void test() {
         ListNode head = new ListNode(4);
@@ -51,6 +90,11 @@ public class LeetCode_148 {
         p.next = new ListNode(1);
         p = p.next;
         p.next = new ListNode(3);
-        sortList(head);
+        listQuickSort(head);
+        p = head;
+        while (p != null) {
+            System.out.println(p.val);
+            p = p.next;
+        }
     }
 }

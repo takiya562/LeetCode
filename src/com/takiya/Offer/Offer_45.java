@@ -24,9 +24,7 @@ public class Offer_45 {
         String[] arrays = new String[nums.length];
         for (int i = 0; i < nums.length; ++i)
             arrays[i] = String.valueOf(nums[i]);
-        Arrays.sort(arrays, (i, j) -> {
-            return compare(i, j);
-        });
+        Arrays.sort(arrays, this::compare);
         StringBuilder sb = new StringBuilder();
         for (String str : arrays)
             sb.append(str);

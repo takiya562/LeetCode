@@ -2,20 +2,23 @@ package com.takiya.面试金典;
 
 public class missing_two_lcci {
     public int[] missingTwo(int[] nums) {
-        int N = nums.length + 2;
-        int sum = 0;
-        for (int i = 0; i < nums.length; ++i) {
-            sum += nums[i];
+        int n = nums.length + 2;
+        int bitMask = 0;
+        for (int i = 1; i <= n; i++)
+            bitMask ^= i;
+        for (int num : nums)
+            bitMask ^= num;
+        int diff = bitMask & (-bitMask);
+        int x = 0;
+        for (int i = 1; i <=n; i++) {
+            if ((diff & i) != 0)
+                x ^= i;
         }
-        int sumOfTwo = (1 + N) * N / 2 - sum;
-        int threshold = sumOfTwo / 2;
-        sum = 0;
-        for (int i = 0; i < nums.length; ++i) {
-            if (nums[i] <= threshold)
-                sum += nums[i];
+        for (int num : nums) {
+            if ((diff & num) != 0)
+                x ^= num;
         }
-        int a = (1 + threshold) * threshold / 2 - sum;
-        int b = sumOfTwo - a;
-        return new int[] {a, b};
+        int y = bitMask ^ x;
+        return new int[] {x, y};
     }
 }
