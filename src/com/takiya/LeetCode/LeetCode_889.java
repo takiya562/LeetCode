@@ -1,14 +1,10 @@
 package com.takiya.LeetCode;
 
 
+import include.TreeNode;
+
 public class LeetCode_889 {
 
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
     int[] pre;
     int[] post;
     public TreeNode constructFromPrePost(int[] pre, int[] post) {

@@ -1,16 +1,12 @@
 package com.takiya.LeetCode;
 
+import include.TreeNode;
+
 import java.util.ArrayList;
 import java.util.Stack;
 
 public class LeetCode_129 {
 
-    class  TreeNode{
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
     public int sumNumbers(TreeNode root) {
         int ans = 0;
         if (root == null)
