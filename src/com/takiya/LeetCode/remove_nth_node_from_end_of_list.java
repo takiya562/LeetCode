@@ -1,11 +1,8 @@
 package com.takiya.LeetCode;
 
-public class LeetCode_19 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-    }
+import include.ListNode;
+
+public class remove_nth_node_from_end_of_list {
     public static ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode left = head;
         ListNode right = head;

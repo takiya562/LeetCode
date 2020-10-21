@@ -1,11 +1,8 @@
 package com.takiya.LeetCode;
 
+import include.ListNode;
+
 public class LeetCode_21 {
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-    }
     /*
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null)
