@@ -1,6 +1,6 @@
 package com.takiya.LeetCode;
 
-public class LeetCode_845 {
+public class longest_mountain_in_array {
     public static int longestMountain(int[] A) {
         int max = 0;
         for (int i = 1; i < A.length - 1; ++i) {
