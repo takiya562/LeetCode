@@ -1,32 +1,20 @@
 package include;
 
 public class UnionFind {
-    int[] father;
-    public UnionFind(int len) {
-        father = new int[len];
-        for (int i = 0; i < len; i++)
-            father[i] = i;
+    private int[] parent;
+    public UnionFind(int lenght) {
+        parent = new int[lenght];
+        for (int i = 0; i < lenght; i++)
+            parent[i] = i;
     }
-    public void Union(int x, int y) {
-        int root1 = findFather(x);
-        int root2 = findFather(y);
-        if (root1 != root2)
-            father[root1] = root2;
+
+    public int find(int index) {
+        if (parent[index] != index)
+            parent[index] = find(parent[index]);
+        return parent[index];
     }
-    public int Find(int x) {
-        int son = x;
-        while (x != father[x])
-            x = father[x];
-        while (son != father[son]) {
-            int temp = son;
-            son = father[son];
-            father[temp] = x;
-        }
-        return x;
-    }
-    public int findFather(int x) {
-        while (x != father[x])
-            x=father[x];
-        return x;
+
+    public void union(int index1, int index2) {
+        parent[find(index2)] = parent[find(index1)];
     }
 }

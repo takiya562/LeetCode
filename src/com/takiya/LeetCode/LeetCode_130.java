@@ -1,90 +1,88 @@
 package com.takiya.LeetCode;
+import include.Tools;
 import include.UnionFind;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class LeetCode_130 {
-    /*
-    public static void solve(char[][] board) {
-        if (board == null || board.length == 0)
-            return;
-        int m = board.length;
-        int n = board[0].length;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                boolean isEdge = i==0 || j == 0 || i == m-1 || j == n-1;
-                if (isEdge && board[i][j] == 'O') {
-                    dfs(board, i, j);
-                }
+    int[] dirs = {-1, 0, 1, 0, -1};
+    int r, c;
+    public void solve(char[][] board) {
+        r = board.length;
+        if (r == 0) return;
+        c = board[0].length;
+        UnionFind uf = new UnionFind(r * c);
+        boolean[][] visited = new boolean[r][c];
+        //上
+        for (int i = 0; i < c - 1; i++) {
+            if (!visited[0][i] && board[0][i] == 'O') {
+                visited[0][i] = true;
+                dfs(board, visited, uf, 0, i);
             }
         }
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (board[i][j] == 'O')
-                    board[i][j] = 'X';
-                if (board[i][j] == '#')
-                    board[i][j] = 'O';
+        //右
+        for (int i = 0; i < r - 1; i++) {
+            if (!visited[i][c - 1] && board[i][c - 1] == 'O') {
+                visited[i][c - 1] = true;
+                dfs(board, visited, uf, i, c - 1);
             }
         }
-    }
-    public static void dfs(char[][] board, int i, int j) {
-        if (i < 0 || j <0 || i >= board.length || j >= board[0].length || board[i][j] == '#' || board[i][j] == 'X')
-            return;
-        board[i][j] = '#';
-        dfs(board, i-1, j);
-        dfs(board, i+1, j);
-        dfs(board, i, j-1);
-        dfs(board, i, j+1);
-    }*/
-
-    public static void solve(char[][] board) {
-        if (board == null || board.length == 0)
-            return;
-        int rows = board.length;
-        int cols = board[0].length;
-        UnionFind uf = new UnionFind(rows*cols+1);
-        int dummy = rows*cols;
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                if (board[i][j] == 'O') {
-                    if (i == 0 || j == 0 || i == rows-1 || j == cols-1)
-                        uf.Union(node(i, j, cols), dummy);
-                    else {
-                        if (i > 0 && board[i-1][j] == 'O')
-                            uf.Union(node(i, j, cols), node(i-1, j, cols));
-                        if (j > 0 && board[i][j-1] == 'O')
-                            uf.Union(node(i, j, cols), node(i, j-1, cols));
-                        if (i < rows-1 && board[i+1][j] == 'O')
-                            uf.Union(node(i+1, j, cols), node(i, j, cols));
-                        if (j < cols-1 && board[i][j+1] == 'O')
-                            uf.Union(node(i, j+1, cols), node(i, j, cols));
-                    }
-                }
+        //下
+        for (int i = c - 1; i > 0; i--) {
+            if (!visited[r - 1][i] && board[r - 1][i] == 'O') {
+                visited[r - 1][i] = true;
+                dfs(board, visited, uf, r - 1, i);
             }
         }
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                if (uf.Find(node(i, j, cols)) == dummy)
-                    board[i][j] = 'O';
-                else
-                    board[i][j] = 'X';
+        //左
+        for (int i = r - 1; i > 0; i--) {
+            if (!visited[i][0] && board[i][0] == 'O') {
+                visited[i][0] = true;
+                dfs(board, visited, uf, i, 0);
+            }
+        }
+        for (int i = 1; i < r - 1; i++) {
+            for (int j = 1; j < c - 1; j++) {
+                int parent = uf.find(i * c + j);
+                if (parent / c == 0 || parent / c == r - 1 || parent % c == 0 || parent % c == c - 1)
+                    continue;
+                board[i][j] = 'X';
             }
         }
     }
 
-    public static int node(int i, int j, int cols) {
-        return i*cols+j;
+    private void dfs(char[][] board, boolean[][] visited, UnionFind uf, int x, int y) {
+        for (int i = 0; i < 4; i++) {
+            int nx = x + dirs[i], ny = y + dirs[i + 1];
+            if (nx >= 0 && nx < r && ny >= 0 && ny < c && !visited[nx][ny] && board[nx][ny] == 'O') {
+                uf.union(x * c + y, nx * c + ny);
+                visited[nx][ny] = true;
+                dfs(board, visited, uf, nx, ny);
+            }
+        }
     }
 
-
-    public static void main(String args[]) {
-        char[][] board = {{'O','X','X'},
-                         {'X','O','X'},
-                         {'X','X','O'}
-                        };
+    @Test
+    public void test() {
+        String expected = "[[\"X\",\"O\",\"X\",\"O\",\"X\",\"O\"],[\"O\",\"X\",\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\",\"X\",\"O\"],[\"O\",\"X\",\"O\",\"X\",\"O\",\"X\"]]";
+        String origin = "[[\"X\",\"O\",\"X\",\"O\",\"X\",\"O\"],[\"O\",\"X\",\"O\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"O\",\"X\",\"O\"],[\"O\",\"X\",\"O\",\"X\",\"O\",\"X\"]]";
+        char[][] board = Tools.stringToCharMatrix(origin);
         solve(board);
-        for(int i = 0; i < board.length; i++){
-            for (int j = 0; j < board[0].length; j++)
-                System.out.print(board[i][j]);
-            System.out.println();
-        }
+        Assert.assertEquals(expected, Tools.prettyCharMatrixToString(board));
+        origin = "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"X\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]";
+        expected = "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]";
+        board = Tools.stringToCharMatrix(origin);
+        solve(board);
+        Assert.assertEquals(expected, Tools.prettyCharMatrixToString(board));
+        origin = "[[\"O\",\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"O\",\"X\",\"O\"],[\"X\",\"O\",\"X\",\"O\",\"X\"],[\"O\",\"X\",\"O\",\"O\",\"O\"],[\"X\",\"X\",\"O\",\"X\",\"O\"]]";
+        expected = "[[\"O\",\"X\",\"X\",\"O\",\"X\"],[\"X\",\"X\",\"X\",\"X\",\"O\"],[\"X\",\"X\",\"X\",\"O\",\"X\"],[\"O\",\"X\",\"O\",\"O\",\"O\"],[\"X\",\"X\",\"O\",\"X\",\"O\"]]";
+        board = Tools.stringToCharMatrix(origin);
+        solve(board);
+        Assert.assertEquals(expected, Tools.prettyCharMatrixToString(board));
+        origin = "[[\"X\",\"O\",\"X\",\"X\"],[\"O\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"O\"],[\"O\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"O\"],[\"O\",\"X\",\"O\",\"X\"]]";
+        expected = "[[\"X\",\"O\",\"X\",\"X\"],[\"O\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"O\"],[\"O\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"O\"],[\"O\",\"X\",\"O\",\"X\"]]";
+        board = Tools.stringToCharMatrix(origin);
+        solve(board);
+        Assert.assertEquals(expected, Tools.prettyCharMatrixToString(board));
     }
 }
