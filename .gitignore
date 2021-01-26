@@ -8,3 +8,5 @@ toy
 Main.java
 resources
 Tecent.java
+*.sublime-workspace
+javaFiles.txt

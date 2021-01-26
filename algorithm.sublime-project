@@ -1,0 +1,16 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.iml"
+			],
+			"folder_exclude_patterns":
+			[
+				".idea"
+			],
+			"path": "."
+		}
+	]
+}

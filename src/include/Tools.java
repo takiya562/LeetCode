@@ -1,10 +1,10 @@
 package include;
 
-import com.sun.corba.se.impl.oa.toa.TOA;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.List;
 
 
 public class Tools {
@@ -40,8 +40,74 @@ public class Tools {
         return output;
     }
 
+    public static String IntegerArrayToString(int[] array) {
+        if (array == null)  return "[]";
+        int n = array.length;
+        if (n == 0) return "[]";
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = 0; i < n - 1; i++) {
+            sb.append(array[i]).append(",");
+        }
+        sb.append(array[n - 1]).append("]");
+        return sb.toString();
+    }
+
+    public static String IntegerMatrixToString(int[][] matrix) {
+        if (matrix == null) return "[]";
+        int n = matrix.length;
+        if (n == 0) return "[]";
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = 0; i < n - 1; i++) {
+            int[] array = matrix[i];
+            sb.append(IntegerArrayToString(array)).append(",");
+        }
+        sb.append(IntegerArrayToString(matrix[n - 1])).append("]");
+        return sb.toString();
+    }
+
+    public static <T> String ListToString(List<T> list) {
+        if (list == null)   return "[]";
+        int n = list.size();
+        if (n == 0) return "[]";
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = 0; i < n - 1; i++) {
+            sb.append(list.get(i).toString()).append(",");
+        }
+        sb.append(list.get(n - 1).toString()).append("]");
+        return sb.toString();
+    }
+
+    public static <T> String ListsToString(List<List<T>> lists) {
+        if (lists == null)  return "[]";
+        int n = lists.size();
+        if (n == 0) return "[]";
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = 0; i < n - 1; i++) {
+            sb.append(ListToString(lists.get(i))).append(",");
+        }
+        sb.append(ListToString(lists.get(n - 1))).append("]");
+        return sb.toString();
+    }
+
+    public static String[] stringToStringArray(String input) {
+        input = input.trim();
+        input = input.substring(1, input.length() - 1);
+        String[] parts = input.split(",");
+        String[] output = new String[parts.length];
+        for (int i = 0; i < parts.length; i++) {
+            String item = parts[i].substring(1, parts[i].length() - 1);
+            output[i] = item;
+        }
+        return output;
+    }
+
     public static char[] stringToCharArray(String input) {
         input = input.trim();
+        if (input.length() == 0)    return new char[]{};
         input = input.substring(1, input.length() - 1);
         String[] parts = input.split(",");
         char[] output = new char[parts.length];
