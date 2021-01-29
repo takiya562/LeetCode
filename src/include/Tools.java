@@ -5,9 +5,56 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
+import java.util.LinkedList;
+import java.util.Queue;
 
 
 public class Tools {
+
+    public static TreeNode stringToTreeNode(String input) {
+        input = input.trim();
+        input = input.substring(1, input.length() - 1);
+        if (input.length() == 0) {
+            return null;
+        }
+    
+        String[] parts = input.split(",");
+        String item = parts[0];
+        TreeNode root = new TreeNode(Integer.parseInt(item));
+        Queue<TreeNode> nodeQueue = new LinkedList<>();
+        nodeQueue.add(root);
+    
+        int index = 1;
+        while(!nodeQueue.isEmpty()) {
+            TreeNode node = nodeQueue.remove();
+    
+            if (index == parts.length) {
+                break;
+            }
+    
+            item = parts[index++];
+            item = item.trim();
+            if (!item.equals("null")) {
+                int leftNumber = Integer.parseInt(item);
+                node.left = new TreeNode(leftNumber);
+                nodeQueue.add(node.left);
+            }
+    
+            if (index == parts.length) {
+                break;
+            }
+    
+            item = parts[index++];
+            item = item.trim();
+            if (!item.equals("null")) {
+                int rightNumber = Integer.parseInt(item);
+                node.right = new TreeNode(rightNumber);
+                nodeQueue.add(node.right);
+            }
+        }
+        return root;
+    }   
+
     public static int[] stringToIntegerArray(String input) {
         input = input.trim();
         input = input.substring(1, input.length() - 1);
@@ -38,6 +85,19 @@ public class Tools {
             output[i] = item;
         }
         return output;
+    }
+
+    public static <T> String ArrayToString(T[] array) {
+        if (array == null)  return "[]";
+        int n = array.length;
+        if (n == 0) return "[]";
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = 0; i < n - 1; i++) {
+            sb.append(array[i].toString()).append(",");
+        }
+        sb.append(array[n - 1].toString()).append("]");
+        return sb.toString();
     }
 
     public static String IntegerArrayToString(int[] array) {
