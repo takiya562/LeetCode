@@ -1,6 +1,6 @@
 package com.takiya.LeetCode;
 
-import include.Tools.
+import include.Tools;
 import org.junit.Test;
 import org.junit.Assert;
 
