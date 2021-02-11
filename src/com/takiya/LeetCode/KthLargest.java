@@ -3,30 +3,27 @@ package com.takiya.LeetCode;
 import java.util.PriorityQueue;
 
 public class KthLargest {
-    PriorityQueue<Integer> heap;
+    PriorityQueue<Integer> maxHeap;
+    PriorityQueue<Integer> minHeap;
+    int k;
+
+    public KthLargest(int k, int[] nums) {
+        PriorityQueue<Integer> pq;
     int k;
 
     public KthLargest(int k, int[] nums) {
         this.k = k;
-        heap = new PriorityQueue<>();
-        for (int i = 0; i < k && i < nums.length; ++i) {
-            heap.offer(nums[i]);
-        }
-        for (int i = k; i < nums.length; ++i) {
-            if (nums[i] > heap.peek()) {
-                heap.poll();
-                heap.offer(nums[i]);
-            }
+        pq = new PriorityQueue<Integer>();
+        for (int x : nums) {
+            add(x);
         }
     }
-
+    
     public int add(int val) {
-        if (heap.size() < k) {
-            heap.offer(val);
-        } else if (val > heap.peek()) {
-            heap.poll();
-            heap.offer(val);
+        pq.offer(val);
+        if (pq.size() > k) {
+            pq.poll();
         }
-        return heap.peek();
+        return pq.peek();
     }
 }
