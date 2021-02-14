@@ -3,12 +3,7 @@ package com.takiya.LeetCode;
 import java.util.PriorityQueue;
 
 public class KthLargest {
-    PriorityQueue<Integer> maxHeap;
-    PriorityQueue<Integer> minHeap;
-    int k;
-
-    public KthLargest(int k, int[] nums) {
-        PriorityQueue<Integer> pq;
+    PriorityQueue<Integer> pq;
     int k;
 
     public KthLargest(int k, int[] nums) {
