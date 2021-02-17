@@ -8,8 +8,8 @@ public class LeetCode_485 {
             if (nums[i] == 1)
                 count++;
             else {
-                count = 0;
                 max = Math.max(count, max);
+                count = 0;
             }
         }
         return Math.max(count, max);
