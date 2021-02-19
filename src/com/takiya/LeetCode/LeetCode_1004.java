@@ -1,32 +1,35 @@
 package com.takiya.LeetCode;
 
+import include.Tools;
+import org.junit.Test;
+import org.junit.Assert;
+
 public class LeetCode_1004 {
-    public static int longestOnes(int[] A, int K) {
-        int L = 0;
-        int R = 0;
-        int max = 0;
-        while (R < A.length) {
-            if (A[R] == 1)  R++;
-            else {
-                if (K > 0) {
-                    R++;
-                    K--;
-                }
-                else {
-                    max = Math.max(max, R - L);
-                    while (L < R && A[L] == 1)   L++;
-                    if (A[L] == 0) {
-                        L++;
-                        K++;
-                    }
+    public int longestOnes(int[] A, int K) {
+        int n = A.length;
+        if (n == 0) return 0;
+        int cnt = 0;
+        int l = 0;
+        for (int r = 0; r < n; r++) {
+            int num = A[r];
+            if (num == 0) {
+                cnt++;
+            }
+            if (cnt > K) {
+                num = A[l++];
+                if (num == 0) {
+                    cnt--;
                 }
             }
         }
-        return Math.max(max, R - L);
+        return n - l;
     }
-    public static void main(String args[]) {
-        int[] A = {1,0,0,1,0,0,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,0,0,1,1,1,0,0,1,0,1,0,0,1,0,0,1,1};
-        int res = longestOnes(A, 9);
-        System.out.println(res);
+
+    @Test
+    public void test() {
+        int[] A = Tools.stringToIntegerArray("[1,1,1,0,0,0,1,1,1,1,0]");
+        Assert.assertEquals(6, longestOnes(A, 2));
+        A = Tools.stringToIntegerArray("[0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1]");
+        Assert.assertEquals(10, longestOnes(A, 3));
     }
 }
